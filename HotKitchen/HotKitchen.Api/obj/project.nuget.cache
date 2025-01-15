@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8xsamxs2Pxg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Amadeeus\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "C:\\Users\\Amadeeus\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

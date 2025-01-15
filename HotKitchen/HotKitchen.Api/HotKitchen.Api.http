@@ -1,0 +1,6 @@
+@HotKitchen.Api_HostAddress = http://localhost:5103
+
+GET {{HotKitchen.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
