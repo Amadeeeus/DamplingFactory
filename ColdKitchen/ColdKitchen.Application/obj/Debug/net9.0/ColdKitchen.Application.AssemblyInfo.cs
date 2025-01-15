@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ColdKitchen.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e64eb5306412b5fa94e85092aa4f7c344e36363c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a39a664b85e5239bfc23b82916630b7b12d5b11")]
 [assembly: System.Reflection.AssemblyProductAttribute("ColdKitchen.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ColdKitchen.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

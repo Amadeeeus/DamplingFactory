@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\ColdKitchen\\ColdKitchen.Application\\ColdKitchen.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\ColdKitchen\\ColdKitchen.Application\\ColdKitchen.Application.csproj",
       "projectName": "ColdKitchen.Application",
-      "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\ColdKitchen\\ColdKitchen.Application\\ColdKitchen.Application.csproj",
+      "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\ColdKitchen\\ColdKitchen.Application\\ColdKitchen.Application.csproj",
       "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\ColdKitchen\\ColdKitchen.Application\\obj\\",
+      "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\ColdKitchen\\ColdKitchen.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"

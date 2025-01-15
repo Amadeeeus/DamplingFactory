@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SHzy+Im7qiw=",
+  "dgSpecHash": "5uMDNMs5WZc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\ColdKitchen.Api.csproj",
+  "projectFilePath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\ColdKitchen.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amadeeus\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
     "C:\\Users\\Amadeeus\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
