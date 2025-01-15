@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj": {}
+    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj": {
+    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj",
+        "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj",
         "projectName": "Orchestrator.Infrasture",
-        "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj",
+        "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj",
         "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\obj\\",
+        "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"

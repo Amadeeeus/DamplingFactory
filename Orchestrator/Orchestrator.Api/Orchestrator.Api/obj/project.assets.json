@@ -80,11 +80,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
       "projectName": "Orchestrator.Api",
-      "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
+      "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
       "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\obj\\",
+      "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
