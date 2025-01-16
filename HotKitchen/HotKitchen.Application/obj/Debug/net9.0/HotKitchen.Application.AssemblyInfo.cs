@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotKitchen.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e64eb5306412b5fa94e85092aa4f7c344e36363c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef5bcfd5e90ce9cf2ca1f877c9ce81a575dda350")]
 [assembly: System.Reflection.AssemblyProductAttribute("HotKitchen.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotKitchen.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

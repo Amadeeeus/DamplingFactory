@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj": {}
+    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj": {
+    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj",
+        "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj",
         "projectName": "HotKitchen.Api",
-        "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj",
-        "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\obj\\",
+        "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\HotKitchen.Api.csproj",
+        "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\HotKitchen\\HotKitchen.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
