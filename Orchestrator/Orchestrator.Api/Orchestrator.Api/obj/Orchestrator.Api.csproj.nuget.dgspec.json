@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj": {}
+    "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj": {
+    "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
         "projectName": "Orchestrator.Api",
-        "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
-        "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\obj\\",
+        "projectPath": "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\Orchestrator.Api.csproj",
+        "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Api\\Orchestrator.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

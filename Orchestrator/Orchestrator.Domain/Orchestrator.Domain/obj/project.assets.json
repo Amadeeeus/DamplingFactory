@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\amade\\.nuget\\packages\\": {}
+    "C:\\Users\\Amadeeus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Domain\\Orchestrator.Domain\\Orchestrator.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Domain\\Orchestrator.Domain\\Orchestrator.Domain.csproj",
       "projectName": "Orchestrator.Domain",
-      "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Domain\\Orchestrator.Domain\\Orchestrator.Domain.csproj",
-      "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Domain\\Orchestrator.Domain\\obj\\",
+      "projectPath": "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Domain\\Orchestrator.Domain\\Orchestrator.Domain.csproj",
+      "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Amadeeus\\Desktop\\ГИТ\\DamplingFactory\\Orchestrator\\Orchestrator.Domain\\Orchestrator.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
