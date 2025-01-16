@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj",
-      "projectName": "Orchestrator.Infrasture",
-      "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\Orchestrator.Infrasture.csproj",
+      "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasructure\\Orchestrator.Infrasructure.csproj",
+      "projectName": "Orchestrator.Infrasructure",
+      "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasructure\\Orchestrator.Infrasructure.csproj",
       "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasture\\obj\\",
+      "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Infrasture\\Orchestrator.Infrasructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"

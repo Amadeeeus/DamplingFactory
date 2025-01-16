@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Domain", "Orchestrator\Orchestrator.Domain\Orchestrator.Domain\Orchestrator.Domain.csproj", "{2ACDDA77-A256-482E-96BD-70F5DBAAD995}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Infrasture", "Orchestrator\Orchestrator.Infrasture\Orchestrator.Infrasture\Orchestrator.Infrasture.csproj", "{1548F559-0FDC-4EAE-BDCD-AACB30DF8562}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrator.Infrasructure", "Orchestrator\Orchestrator.Infrasture\Orchestrator.Infrasructure\Orchestrator.Infrasructure.csproj", "{1548F559-0FDC-4EAE-BDCD-AACB30DF8562}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
