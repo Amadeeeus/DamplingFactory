@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Amadeeus\\.nuget\\packages\\": {}
+    "C:\\Users\\amade\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Application\\DoughKitchen.Application.csproj",
+      "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Application\\DoughKitchen.Application.csproj",
       "projectName": "DoughKitchen.Application",
-      "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Application\\DoughKitchen.Application.csproj",
-      "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Application\\obj\\",
+      "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Application\\DoughKitchen.Application.csproj",
+      "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

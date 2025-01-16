@@ -1,6 +1,0 @@
-@DoughKitchen.Api_HostAddress = http://localhost:5098
-
-GET {{DoughKitchen.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj": {}
+    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj": {
+    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj",
+        "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj",
         "projectName": "DoughKitchen.Infasructure",
-        "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj",
-        "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\obj\\",
+        "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\DoughKitchen.Infasructure.csproj",
+        "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Infasructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoughKitchen.Infasructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e64eb5306412b5fa94e85092aa4f7c344e36363c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c010007e4027d79a20b92f6cb0120e6adccdae")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoughKitchen.Infasructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoughKitchen.Infasructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

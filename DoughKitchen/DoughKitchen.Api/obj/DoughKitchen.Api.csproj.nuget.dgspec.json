@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj": {}
+    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj": {
+    "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj",
+        "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj",
         "projectName": "DoughKitchen.Api",
-        "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj",
-        "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\obj\\",
+        "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\DoughKitchen.Api.csproj",
+        "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\DoughKitchen\\DoughKitchen.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
