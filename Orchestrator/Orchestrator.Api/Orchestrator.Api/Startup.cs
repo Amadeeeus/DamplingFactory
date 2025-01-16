@@ -1,3 +1,6 @@
+using Orchestrator.Application.Services;
+using Orchestrator.Infrasture.HttpClients;
+
 namespace Orchestrator.Api;
 
 public class Startup
@@ -11,30 +14,10 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
-        services.AddHttpClient("CookService", client =>
-        {
-            client.BaseAddress = new Uri(_configuration["localhost:5433"]!);
-        });
-        services.AddHttpClient("RecipeService", client =>
-        {
-            client.BaseAddress = new Uri(_configuration["localhost:5434"]!);
-        }); 
-        services.AddHttpClient("DoughKitchen", client =>
-        {
-            client.BaseAddress = new Uri(_configuration["localhost:5435"]!);
-        });
-        services.AddHttpClient("HotKitchen", client =>
-        {
-            client.BaseAddress = new Uri(_configuration["localhost:5436"]!);
-        });
-        services.AddHttpClient("ColdKitchen", client =>
-        {
-            client.BaseAddress = new Uri(_configuration["localhost:5437"]!);
-        });
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
-        services.AddApplicationServices();
-        services.AddInfrastructureServices(_configuration);
+        services.AddScoped<IOrchestratorService, OrchestrationService>();
+        services.AddHttpClients(_configuration);
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -45,7 +28,6 @@ public class Startup
             app.UseSwagger();
             app.UseSwaggerUI(c=> c.SwaggerEndpoint("/swagger/v/1/swagger.json", "Orchestrator.Api v1"));
         }
-        
         app.UseHttpsRedirection();
         app.UseRouting();
         app.UseAuthorization();
