@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecipeService", "RecipeService", "{1622E4C8-B25C-4FAB-80D5-3DF82C342B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeService.Application", "RecipeService\RecipeService.Application\RecipeService.Application.csproj", "{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC} = {1622E4C8-B25C-4FAB-80D5-3DF82C342B99}
+	EndGlobalSection
+EndGlobal
