@@ -75,19 +75,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Amadeeus\\.nuget\\packages\\": {}
+    "C:\\Users\\amade\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\ColdKitchen.Api.csproj",
+      "projectUniqueName": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\ColdKitchen.Api.csproj",
       "projectName": "ColdKitchen.Api",
-      "projectPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\ColdKitchen.Api.csproj",
-      "packagesPath": "C:\\Users\\Amadeeus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amadeeus\\RiderProjects\\DamplingFactory\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\obj\\",
+      "projectPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\ColdKitchen.Api.csproj",
+      "packagesPath": "C:\\Users\\amade\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\ColdKitchen\\ColdKitchen.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Amadeeus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\amade\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
