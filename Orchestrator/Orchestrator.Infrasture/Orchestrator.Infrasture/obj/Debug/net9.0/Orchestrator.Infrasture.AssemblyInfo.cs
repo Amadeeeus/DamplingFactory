@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orchestrator.Infrasture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd88e7bc1429e451cb977ada8558ef13cf85a628")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9576e3ed667b4fd076775616a707c89439771ea5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orchestrator.Infrasture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orchestrator.Infrasture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
