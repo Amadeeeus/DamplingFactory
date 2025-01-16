@@ -14,7 +14,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e982721-ad28-43e1-948e-4061ce66bedb" name="Changes" comment="for checkout" />
+    <list default="true" id="0e982721-ad28-43e1-948e-4061ce66bedb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RecipeService/Infrastructure/Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DamplingFactory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DamplingFactory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DamplingFactory.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DamplingFactory.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeService/RecipeService.Application/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeService/RecipeService.Application/RecipeService.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeService/RecipeService.Application/RecipeService.Application.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev-recipe-service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev-recipe-service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RiderProblemsViewState">
     <option name="proportion" value="0.3266583" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Launch Settings Profile.ColdKitchen.Api: http">
     <configuration name="ColdKitchen.Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ColdKitchen/ColdKitchen.Api/ColdKitchen.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -186,7 +192,8 @@
       <option name="presentableId" value="Default" />
       <updated>1737011521781</updated>
       <workItem from="1737011522885" duration="1476000" />
-      <workItem from="1737013164704" duration="3320000" />
+      <workItem from="1737013164704" duration="3472000" />
+      <workItem from="1737017502083" duration="393000" />
     </task>
     <task id="LOCAL-00001" summary="some changes">
       <option name="closed" value="true" />
@@ -244,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737017059428</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added new">
+      <option name="closed" value="true" />
+      <created>1737017355937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737017355937</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +274,7 @@
     <MESSAGE value="Added few classes" />
     <MESSAGE value="some changes" />
     <MESSAGE value="for checkout" />
-    <option name="LAST_COMMIT_MESSAGE" value="for checkout" />
+    <MESSAGE value="added new" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new" />
   </component>
 </project>

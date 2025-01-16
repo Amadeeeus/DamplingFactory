@@ -2,7 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecipeService", "RecipeService", "{1622E4C8-B25C-4FAB-80D5-3DF82C342B99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeService.Application", "RecipeService\RecipeService.Application\RecipeService.Application.csproj", "{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeService.Infrastructure", "RecipeService\RecipeService.Infrastructure\RecipeService.Infrastructure.csproj", "{30D72000-F4C5-484F-B93A-71788C694891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeService.Domain", "RecipeService\RecipeService.Domain\RecipeService.Domain.csproj", "{19648294-093C-47AD-A7C1-19B971CCAEF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeService.Application", "RecipeService\RecipeService.Application\RecipeService.Application.csproj", "{FFF175EA-1955-4F04-BB7B-615B0271F5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeService.Api", "RecipeService\RecipeService.Api\RecipeService.Api.csproj", "{F061E07E-C0F4-43F2-B542-CE102874721C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,12 +16,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D72000-F4C5-484F-B93A-71788C694891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D72000-F4C5-484F-B93A-71788C694891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D72000-F4C5-484F-B93A-71788C694891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D72000-F4C5-484F-B93A-71788C694891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19648294-093C-47AD-A7C1-19B971CCAEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19648294-093C-47AD-A7C1-19B971CCAEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19648294-093C-47AD-A7C1-19B971CCAEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19648294-093C-47AD-A7C1-19B971CCAEF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF175EA-1955-4F04-BB7B-615B0271F5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF175EA-1955-4F04-BB7B-615B0271F5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF175EA-1955-4F04-BB7B-615B0271F5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF175EA-1955-4F04-BB7B-615B0271F5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F061E07E-C0F4-43F2-B542-CE102874721C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F061E07E-C0F4-43F2-B542-CE102874721C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F061E07E-C0F4-43F2-B542-CE102874721C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F061E07E-C0F4-43F2-B542-CE102874721C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{61AB1A9A-776D-4B54-87B5-4B277B82B4FC} = {1622E4C8-B25C-4FAB-80D5-3DF82C342B99}
+		{30D72000-F4C5-484F-B93A-71788C694891} = {1622E4C8-B25C-4FAB-80D5-3DF82C342B99}
+		{19648294-093C-47AD-A7C1-19B971CCAEF4} = {1622E4C8-B25C-4FAB-80D5-3DF82C342B99}
+		{FFF175EA-1955-4F04-BB7B-615B0271F5AD} = {1622E4C8-B25C-4FAB-80D5-3DF82C342B99}
+		{F061E07E-C0F4-43F2-B542-CE102874721C} = {1622E4C8-B25C-4FAB-80D5-3DF82C342B99}
 	EndGlobalSection
 EndGlobal
