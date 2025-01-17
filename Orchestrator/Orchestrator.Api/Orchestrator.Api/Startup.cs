@@ -1,5 +1,7 @@
 using Orchestrator.Application.Services;
+using Orchestrator.Domain.Events;
 using Orchestrator.Infrasture.HttpClients;
+using Orchestrator.Infrasture.Persistence;
 
 namespace Orchestrator.Api;
 
@@ -16,8 +18,10 @@ public class Startup
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
-        services.AddScoped<OrchestrationService>();
-        services.AddHttpClients(_configuration);
+        services.AddScoped<IOrchestrationService, OrchestrationService>();
+        services.AddScoped<IOrchestratorMongoRepository, OrchestratorMongoRepository>();
+        services.AddSingleton<IEventPublisher, KafkaEventPublisher>();
+        //services.AddHttpClients(_configuration);
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
