@@ -7,9 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Commands\" />
-      <Folder Include="Interfaces\" />
-      <Folder Include="Queries\" />
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+      <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Orchestrator.Infrasture\Orchestrator.Infrasructure\Orchestrator.Infrasructure.csproj" />
     </ItemGroup>
 
 </Project>

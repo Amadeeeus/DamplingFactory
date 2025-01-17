@@ -1,6 +1,6 @@
 namespace Orchestrator.Domain.Enums;
 
-enum ProcessStage
+public enum ProcessStage
 {
     Accepted,
     InProgress,

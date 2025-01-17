@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Orchestrator.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92fc315882b6aa6a32c6957cce4fd2baefe1048b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23650f08a7cff5788bcc5f81ebd7a66275e3d8ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Orchestrator.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Orchestrator.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

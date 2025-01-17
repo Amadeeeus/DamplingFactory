@@ -16,7 +16,7 @@ public class Startup
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
-        services.AddScoped<IOrchestratorService, OrchestrationService>();
+        services.AddScoped<OrchestrationService>();
         services.AddHttpClients(_configuration);
     }
 
