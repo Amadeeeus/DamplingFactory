@@ -23,4 +23,8 @@
       <ProjectReference Include="..\..\Orchestrator.Domain\Orchestrator.Domain\Orchestrator.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Messaging\" />
+    </ItemGroup>
+
 </Project>

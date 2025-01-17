@@ -2,7 +2,7 @@ using Confluent.Kafka;
 using Orchestrator.Infrasture.Persistence;
 using JsonConvert = Newtonsoft.Json.JsonConvert;
 
-namespace Orchestrator.Infrasture.Messaging;
+namespace Orchestrator.Domain.Events;
 
 public class KafkaEventPublisher:IEventPublisher
 {
