@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Shared.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Orchestrator.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ea500a2faededb635a32fc4b54ac38ca8303c37")]
-[assembly: System.Reflection.AssemblyProductAttribute("Shared.Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Shared.Domain")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed4aaf8afb6341a35eea6f38f2dbc4e6d88deebe")]
+[assembly: System.Reflection.AssemblyProductAttribute("Orchestrator.Api")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Orchestrator.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
