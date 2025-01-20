@@ -147,6 +147,10 @@
             "Confluent.Kafka": {
               "target": "Package",
               "version": "[2.8.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             }
           },
           "imports": [
@@ -215,6 +219,18 @@
             "Confluent.Kafka": {
               "target": "Package",
               "version": "[2.8.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

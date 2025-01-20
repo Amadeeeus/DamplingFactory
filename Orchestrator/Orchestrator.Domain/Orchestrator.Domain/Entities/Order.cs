@@ -6,14 +6,14 @@ public class Order
 {
     public Order()
     {
-        Status = new OrderStatus{OrderId = Id, ProcessStage = ProcessStage.InProgress};
+        Status = new OrderStatus{OrderId = Id, ProcessStage = ProcessStage.InProgress,OrderDate  = DateTime.UtcNow.AddMinutes(20)};
     }
 
-    public Guid Id { get; } = new ();
-    public Guid DamplingId { get; set; }
+    public string Id { get; } = new Guid().ToString();
+    public string RecipeId { get; set; }
     public int Portions { get; set; }
+    //can be float
     public float UserRating { get; set; }
-    public Guid UserId { get; set; }
-    public DateTime OrderDate { get; set; } = DateTime.UtcNow.AddMinutes(20);
+    public string UserId { get; set; }
     public OrderStatus Status { get; set; }
 }

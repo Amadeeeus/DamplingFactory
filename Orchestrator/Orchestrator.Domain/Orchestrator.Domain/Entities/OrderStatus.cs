@@ -4,6 +4,7 @@ namespace Orchestrator.Domain.Entities;
 
 public class OrderStatus
 {
-    public Guid OrderId { get; set; }
+    public string OrderId { get; set; }
+    public DateTime OrderDate { get; set; }
     public ProcessStage ProcessStage { get; set; }
 }
