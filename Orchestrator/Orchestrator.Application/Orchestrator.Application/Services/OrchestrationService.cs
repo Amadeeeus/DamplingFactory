@@ -50,7 +50,7 @@ public class OrchestrationService : IOrchestrationService
     public async Task<float> StartOrderProcessAsync(UserChoice order)
     {
         await _eventPublisher.PublishAsync(_settings.Topics.GetReceipt, order.RecipeId);
-        var recipe = await _consumer.ConsumeAsync<Recipe>(_settings.Topics.ReceiptResponse, await GetCt());
+        var recipe = await _consumer.ConsumeAsync<Recipe>(_settings.Topics.ReceiptResponse, GetCt());
         await GetRating(recipe);
         if (recipe.Ingredients.Count > 1)
         {
@@ -60,7 +60,7 @@ public class OrchestrationService : IOrchestrationService
         {
            await _eventPublisher.PublishAsync(_settings.Topics.GetCook, 2);
         }
-        var cookResponse = await _consumer.ConsumeAsync<Cook>(_settings.Topics.CookResponse, await GetCt());
+        var cookResponse = await _consumer.ConsumeAsync<Cook>(_settings.Topics.CookResponse, GetCt());
         order.CookGrade = cookResponse.Grade;
         return await HandleOrderProcessAsync(order);
     }
@@ -68,22 +68,15 @@ public class OrchestrationService : IOrchestrationService
     public async Task<float> HandleOrderProcessAsync(UserChoice order)
     {
         await _eventPublisher.PublishAsync(_settings.Topics.HotKitchen, order);
-        var hotResponse = await _consumer.ConsumeAsync<int>(_settings.Topics.HotKitchenResponse, await GetCt());
-        if (hotResponse != 200)
-        {
-            await _eventPublisher.PublishAsync(_settings.Topics.ColdKitchen, 312);
-            var coldResponse = await _consumer.ConsumeAsync<int>(_settings.Topics.ColdKitchenResponse, await GetCt());
-            if (coldResponse != 200)
-            {
-                await _eventPublisher.PublishAsync(_settings.Topics.DoughKitchen, 312);
-                var doughResponse =await _consumer.ConsumeAsync<int>(_settings.Topics.DoughKitchenResponse, await GetCt());
-                while (doughResponse != 200)
+        await ProcessKitchen(_settings.Topics.HotKitchenResponse, _settings.Topics.ColdKitchen);
+        await ProcessKitchen(_settings.Topics.ColdKitchenResponse, _settings.Topics.DoughKitchen);
+
+                while (await _consumer.ConsumeAsync<int>(_settings.Topics.DoughKitchenResponse,GetCt())!=200)
                 {
                     await _eventPublisher.PublishAsync(_settings.Topics.GetCook, 1);
-                    doughResponse = await _consumer.ConsumeAsync<int>(_settings.Topics.GetCook, await GetCt());
                 }
-            }
-        }
+            
+        
         await SwitchStatusToDone();
         return _order[_orderId].UserRating;
     }
@@ -93,7 +86,7 @@ public class OrchestrationService : IOrchestrationService
         _order.TryGetValue(_orderId, out var currentOrder);
         var status = currentOrder!.Status;
         status.ProcessStage = ProcessStage.Done;
-        currentOrder!.Status = status;
+        currentOrder.Status = status;
         _order[_orderId] = currentOrder;
         return Task.CompletedTask;
     }
@@ -106,9 +99,17 @@ public class OrchestrationService : IOrchestrationService
         return Task.CompletedTask;
     }
 
-    private Task<CancellationToken> GetCt()
+    private async Task ProcessKitchen(string inputTopic, string outputTopic)
     {
-        var cts = new CancellationTokenSource(_settings.Timeout);
-        return Task.FromResult(cts.Token);
+        var response = await _consumer.ConsumeAsync<int>(inputTopic, GetCt());
+        if (response != 200)
+        {
+            await _eventPublisher.PublishAsync(outputTopic, 312);
+        }
+    }
+
+    private CancellationToken GetCt()
+    { 
+        return new CancellationTokenSource(_settings.Timeout).Token;
     }
 }    
