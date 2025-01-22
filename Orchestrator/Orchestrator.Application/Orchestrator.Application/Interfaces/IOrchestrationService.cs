@@ -4,9 +4,8 @@ namespace Orchestrator.Application.Services;
 
 public interface IOrchestrationService
 {
-    Task HandleOrderCreatedAsync(UserChoice order);
-    Task StartOrderProcessAsync(UserChoice order);
-    Task HandleOrderProcessAsync(UserChoice order);
-    Task SwitchStatusToDone();
-    Task GetRating(Recipe recipe);
+    Task<float> HandleOrderCreatedAsync(UserChoice order);
+    Task<float> StartOrderProcessAsync(UserChoice order);
+    Task<float> HandleOrderProcessAsync(UserChoice order);
+
 }

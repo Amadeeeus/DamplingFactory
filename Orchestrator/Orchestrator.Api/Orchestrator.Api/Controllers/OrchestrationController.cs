@@ -17,7 +17,7 @@ public class OrchestrationController:ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateOrderAsync([FromBody] Order order)
+    public async Task<IActionResult> CreateOrderAsync([FromBody] UserChoice order)
     {
         await _service.HandleOrderCreatedAsync(order);
         return Ok();

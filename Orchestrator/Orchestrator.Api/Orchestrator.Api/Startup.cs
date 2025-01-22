@@ -1,6 +1,7 @@
 using Orchestrator.Application.Services;
 using Orchestrator.Domain.Events;
 using Orchestrator.Infrasture.HttpClients;
+using Orchestrator.Infrasture.Kafka;
 using Orchestrator.Infrasture.Persistence;
 
 namespace Orchestrator.Api;
@@ -15,6 +16,7 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
+        services.Configure<KafkaSettings>(_configuration.GetSection("KafkaSettings"));
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
