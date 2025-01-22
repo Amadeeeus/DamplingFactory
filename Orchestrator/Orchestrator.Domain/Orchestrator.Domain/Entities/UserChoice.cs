@@ -5,4 +5,5 @@ public class UserChoice
     public string? UserId { get; set; }
     public string? RecipeId { get; set; }
     public int PortionsCount { get; set; }
+    public int CookGrade { get; set; }
 }

@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using AutoMapper;
 using Confluent.Kafka;
 using Microsoft.AspNetCore.Http;
@@ -15,7 +16,7 @@ public class OrchestrationService : IOrchestrationService
     private readonly IOrchestratorMongoRepository _repository;
     private readonly IEventPublisher _eventPublisher;
     private readonly KafkaConsumerService _consumer;
-    private readonly Dictionary<string, Order> _order = new();
+    private readonly ConcurrentDictionary<string, Order> _order = new();
     private readonly IMapper _mapper;
     private readonly IHttpContextAccessor _accessor;
     private string orderId; 
@@ -45,32 +46,58 @@ public class OrchestrationService : IOrchestrationService
         await StartOrderProcessAsync(order);
     }
 
-    private async Task StartOrderProcessAsync(UserChoice order)
+    public async Task StartOrderProcessAsync(UserChoice order)
     {
-        _eventPublisher.PublishAsync("GetRecept", order.RecipeId);
+        await _eventPublisher.PublishAsync("GetRecept", order.RecipeId);
         var recipe = await _consumer.ConsumeAsync<Recipe>("ReceptResponce", new CancellationToken());
-        var currentOrder = new Order();
-        _order.TryGetValue(orderId,out currentOrder);
+        await GetRating(recipe);
         if (recipe.Ingredients.Count > 1)
         {
-            _eventPublisher.PublishAsync("GetCook", 3);
+            await _eventPublisher.PublishAsync("GetCook", 3);
         }
         else
         {
-            _eventPublisher.PublishAsync("GetCook", 2);
+           await _eventPublisher.PublishAsync("GetCook", 2);
         }
-        
+        var cookResponse = await _consumer.ConsumeAsync<Cook>("CookResponce", new CancellationToken());
+        order.CookGrade = cookResponse.Grade;
+         await HandleOrderProcessAsync(order);
     }
 
-    private async Task HandleOrderProcessAsync(UserChoice order)
-    private string DetermineTargetTopicBasedOnService(string sourceService)
+    public async Task HandleOrderProcessAsync(UserChoice order)
     {
-        return sourceService switch
-        {
-            "UserService" => "UserTopic",
-            "RatingService" => "RatingTopic",
-            "OrderService" => "OrderTopic",
-            _ => throw new InvalidOperationException($"Неизвестный источник: {sourceService}")
-        };
+        await _eventPublisher.PublishAsync("HotKitchen", order);
+        var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
+        var hotResponse = await _consumer.ConsumeAsync<int>("HotKitchenResponse", cts.Token);
+        while (hotResponse != (int)CustomStatusCodes.Success)
+        { 
+            await (hotResponse switch
+            {
+                404 => Task.CompletedTask,
+                311 =>  _eventPublisher.PublishAsync("GetCook", 1),
+                312 => _eventPublisher.PublishAsync("ColdKitchen", 314),
+                313 => _eventPublisher.PublishAsync("DoughKitchen", 315),
+                _ => throw new InvalidOperationException($"Неизвестный ответ: {hotResponse}")
+            });
+        }
+        await SwitchStatusToDone();
+    }
+
+    public Task SwitchStatusToDone()
+    {
+        _order.TryGetValue(orderId, out var currentOrder);
+        var status = currentOrder!.Status;
+        status.ProcessStage = ProcessStage.Done;
+        currentOrder!.Status = status;
+        _order[orderId] = currentOrder;
+        return Task.CompletedTask;
+    }
+
+    public Task GetRating(Recipe recipe)
+    {
+        _order.TryGetValue(orderId,out var currentOrder);
+        currentOrder!.UserRating = recipe.Rating;
+        _order[orderId] = currentOrder;
+        return Task.CompletedTask;
     }
 }
