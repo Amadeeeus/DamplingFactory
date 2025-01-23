@@ -21,7 +21,7 @@ public class Startup
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddScoped<IOrchestrationService, OrchestrationService>();
-        services.AddScoped<IOrchestratorMongoRepository, OrchestratorUserMongoRepository>();
+        services.AddScoped<IOrchestratorMongoRepository, OrchestratorMongoRepository>();
         services.AddSingleton<IEventPublisher, KafkaEventPublisher>();
         //services.AddHttpClients(_configuration);
     }

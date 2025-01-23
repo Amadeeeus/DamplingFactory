@@ -71,10 +71,10 @@ public class OrchestrationService : IOrchestrationService
     public async Task<float> HandleOrderProcessAsync(UserChoice order)
     {
         await _eventPublisher.PublishAsync(_settings.Topics.HotKitchen, order);
-        await ProcessKitchen(_settings.Topics.HotKitchenResponse, _settings.Topics.ColdKitchen);
-        await ProcessKitchen(_settings.Topics.ColdKitchenResponse, _settings.Topics.DoughKitchen);
+        await ProcessKitchen(_settings.Topics.HotKitchenResponse!, _settings.Topics.ColdKitchen);
+        await ProcessKitchen(_settings.Topics.ColdKitchenResponse!, _settings.Topics.DoughKitchen);
 
-                while (await _consumer.ConsumeAsync<int>(_settings.Topics.DoughKitchenResponse,GetCt())!=200)
+                while (await _consumer.ConsumeAsync<int>(_settings.Topics.DoughKitchenResponse!,GetCt())!=200)
                 {
                     await _eventPublisher.PublishAsync(_settings.Topics.GetCook, 1);
                 }
@@ -85,7 +85,7 @@ public class OrchestrationService : IOrchestrationService
     }
     public async Task<List<Order>> GetAllLogsAsync()
     {
-        return await _repository.GetAllLogsAsync(); 
+        return await _repository.GetAllAsync(); 
     }
 
     public async Task<List<Cook>> GetAllCooksAsync()
@@ -98,7 +98,7 @@ public class OrchestrationService : IOrchestrationService
         return await _kafkaMessageService.GetDataFromKafka<List<Recipe>>(_settings.Topics.GetListReceipt!,_settings.Topics.GetListReceiptResponse!, AdminMessages.GetAllReceipts,GetCt());
     }
 
-    public async Task<Order> GetLogsByOrderIdAsync(string orderId)
+    public async Task<List<Order>> GetLogsByOrderIdAsync(string orderId)
     {
         return await _repository.GetLogsByOrderIdAsync(orderId);
     }
@@ -129,6 +129,11 @@ public class OrchestrationService : IOrchestrationService
     {
         await _kafkaMessageService.DeleteDataFromKafka(_settings.Topics.DeleteCook!,
             _settings.Topics.DeleteCookResponse!, name, GetCt());
+    }
+
+    public async Task DeleteLogByIdAsync(string id)
+    {
+        await _repository.DeleteLogsByIdAsync(id);
     }
 
     public async Task DeleteReceiptAsync(string id)

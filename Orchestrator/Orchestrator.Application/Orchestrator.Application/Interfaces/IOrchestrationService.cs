@@ -10,7 +10,7 @@ public interface IOrchestrationService
     Task<List<Order>> GetAllLogsAsync();
     Task<List<Cook>> GetAllCooksAsync();
     Task<List<Recipe>> GetAllReceiptsAsync();
-    Task<Order> GetLogsByOrderIdAsync(string orderId);
+    Task<List<Order>> GetLogsByOrderIdAsync(string orderId);
     Task<Cook> GetCookByNameAsync(string name);
     Task<Recipe> GetReceiptByIdAsync(string name);
     Task AddCookAsync(Cook cook);
