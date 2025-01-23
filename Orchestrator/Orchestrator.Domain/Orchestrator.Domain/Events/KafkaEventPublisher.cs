@@ -1,5 +1,5 @@
 using Confluent.Kafka;
-using Orchestrator.Infrasture.Persistence;
+using Orchestrator.Infrasructure.Persistence;
 using JsonConvert = Newtonsoft.Json.JsonConvert;
 
 namespace Orchestrator.Domain.Events;
@@ -15,7 +15,7 @@ public class KafkaEventPublisher:IEventPublisher
         _producer = new ProducerBuilder<string, string>(config).Build();
     }
 
-    public async Task PublishAsync<T>(string topic, T message)
+    public async Task PublishAsync<T>(string? topic, T message)
     {
         await _producer.ProduceAsync(topic, new Message<string, string>{Value = JsonConvert.SerializeObject(message)});
     }

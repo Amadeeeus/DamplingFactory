@@ -1,6 +1,6 @@
 using Orchestrator.Domain.DTOs;
 
-namespace Orchestrator.Infrasture.Persistence;
+namespace Orchestrator.Infrasructure.Persistence;
 
 public interface IOrchestratorMongoRepository
 {

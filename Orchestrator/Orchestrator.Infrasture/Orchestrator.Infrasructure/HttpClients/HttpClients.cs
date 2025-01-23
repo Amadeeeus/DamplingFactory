@@ -1,7 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Net.Http;
-namespace Orchestrator.Infrasture.HttpClients;
+namespace Orchestrator.Infrasructure.HttpClients;
 
 public static class HttpClients
 {

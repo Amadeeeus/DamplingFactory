@@ -1,4 +1,4 @@
-namespace Orchestrator.Infrasture.Kafka;
+namespace Orchestrator.Infrasructure.Kafka;
 
 public class KafkaSettings
 {

@@ -1,8 +1,8 @@
 using Orchestrator.Application.Services;
 using Orchestrator.Domain.Events;
-using Orchestrator.Infrasture.HttpClients;
-using Orchestrator.Infrasture.Kafka;
-using Orchestrator.Infrasture.Persistence;
+using Orchestrator.Infrasructure.HttpClients;
+using Orchestrator.Infrasructure.Kafka;
+using Orchestrator.Infrasructure.Persistence;
 
 namespace Orchestrator.Api;
 
@@ -21,7 +21,7 @@ public class Startup
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddScoped<IOrchestrationService, OrchestrationService>();
-        services.AddScoped<IOrchestratorMongoRepository, OrchestratorMongoRepository>();
+        services.AddScoped<IOrchestratorMongoRepository, OrchestratorUserMongoRepository>();
         services.AddSingleton<IEventPublisher, KafkaEventPublisher>();
         //services.AddHttpClients(_configuration);
     }

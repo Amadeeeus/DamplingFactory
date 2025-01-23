@@ -16,4 +16,8 @@
       <ProjectReference Include="..\..\Orchestrator.Infrasture\Orchestrator.Infrasructure\Orchestrator.Infrasructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Interfaces\" />
+    </ItemGroup>
+
 </Project>

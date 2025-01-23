@@ -4,8 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Orchestrator.Domain.Entities;
 using Orchestrator.Domain.Enums;
-using Orchestrator.Infrasture.Kafka;
-using Orchestrator.Infrasture.Persistence;
+using Orchestrator.Domain.Interfaces;
+using Orchestrator.Infrasructure.Kafka;
+using Orchestrator.Infrasructure.Persistence;
 
 namespace Orchestrator.Application.Services;
 
@@ -13,16 +14,18 @@ public class OrchestrationService : IOrchestrationService
 {
     private readonly IOrchestratorMongoRepository _repository;
     private readonly IEventPublisher _eventPublisher;
-    private readonly KafkaConsumerService _consumer;
+    private readonly IKafkaConsumerService _consumer;
     private readonly KafkaSettings _settings;
+    private readonly IKafkaMessageService _kafkaMessageService;
     private readonly ConcurrentDictionary<string, Order> _order = new();
     private readonly IMapper _mapper;
     private readonly IHttpContextAccessor _accessor;
     private string _orderId; 
 
     public OrchestrationService(IOrchestratorMongoRepository repository, IMapper mapper, IEventPublisher eventPublisher,
-        KafkaConsumerService consumer, IHttpContextAccessor accessor, IOptions<KafkaSettings> options, string orderId)
+       IKafkaConsumerService consumer, IHttpContextAccessor accessor, IOptions<KafkaSettings> options, string orderId,IKafkaMessageService kafkaMessageService)
     {
+        _kafkaMessageService = kafkaMessageService;
         _eventPublisher = eventPublisher;
         _accessor = accessor;
         _orderId = orderId;
@@ -80,6 +83,61 @@ public class OrchestrationService : IOrchestrationService
         await SwitchStatusToDone();
         return _order[_orderId].UserRating;
     }
+    public async Task<List<Order>> GetAllLogsAsync()
+    {
+        return await _repository.GetAllLogsAsync(); 
+    }
+
+    public async Task<List<Cook>> GetAllCooksAsync()
+    {
+        return await _kafkaMessageService.GetDataFromKafka<List<Cook>>(_settings.Topics.GetListCooks!,_settings.Topics.GetListCooksResponse!, AdminMessages.GetAllCooks,GetCt());
+    }
+
+    public async Task<List<Recipe>> GetAllReceiptsAsync()
+    {
+        return await _kafkaMessageService.GetDataFromKafka<List<Recipe>>(_settings.Topics.GetListReceipt!,_settings.Topics.GetListReceiptResponse!, AdminMessages.GetAllReceipts,GetCt());
+    }
+
+    public async Task<Order> GetLogsByOrderIdAsync(string orderId)
+    {
+        return await _repository.GetLogsByOrderIdAsync(orderId);
+    }
+
+    public async Task<Cook> GetCookByNameAsync(string name)
+    {
+        return await _kafkaMessageService.GetDataFromKafka<Cook>(_settings.Topics.GetCookByName!, _settings.Topics.GetCookByNameResponse!,
+            AdminMessages.GetCook,GetCt());
+    }
+
+    public async Task<Recipe> GetReceiptByIdAsync(string name)
+    {
+        return await _kafkaMessageService.GetDataFromKafka<Recipe>(_settings.Topics.GetReceiptById!, _settings.Topics.GetReceiptByIdResponse!,
+            AdminMessages.GetReceipt,GetCt());
+    }
+
+    public async Task AddCookAsync(Cook cook)
+    {
+        await _kafkaMessageService.AddDataFromKafka<Cook>(_settings.Topics.CreateCook!, _settings.Topics.CreateCookResponse!,cook,GetCt());
+    }
+
+    public async Task AddReceiptAsync(Recipe recipe)
+    {
+        await _kafkaMessageService.AddDataFromKafka<Recipe>(_settings.Topics.CreateReceipt!,_settings.Topics.CreateReceiptResponse!,recipe,GetCt());
+    }
+
+    public async Task DeleteCookAsync(string name)
+    {
+        await _kafkaMessageService.DeleteDataFromKafka(_settings.Topics.DeleteCook!,
+            _settings.Topics.DeleteCookResponse!, name, GetCt());
+    }
+
+    public async Task DeleteReceiptAsync(string id)
+    {
+        await _kafkaMessageService.DeleteDataFromKafka(_settings.Topics.DeleteReceipt!,_settings.Topics.DeleteReceiptResponse!,id,GetCt());
+    }
+
+    
+
 
     private Task SwitchStatusToDone()
     {
@@ -99,7 +157,7 @@ public class OrchestrationService : IOrchestrationService
         return Task.CompletedTask;
     }
 
-    private async Task ProcessKitchen(string inputTopic, string outputTopic)
+    private async Task ProcessKitchen(string inputTopic, string? outputTopic)
     {
         var response = await _consumer.ConsumeAsync<int>(inputTopic, GetCt());
         if (response != 200)
