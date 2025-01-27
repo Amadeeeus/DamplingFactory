@@ -1,0 +1,13 @@
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\bin\Debug\net9.0\Orchestrator.Domain.deps.json
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\bin\Debug\net9.0\Orchestrator.Domain.dll
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\bin\Debug\net9.0\Orchestrator.Domain.pdb
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.csproj.AssemblyReference.cache
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.AssemblyInfoInputs.cache
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.AssemblyInfo.cs
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.csproj.CoreCompileInputs.cache
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.sourcelink.json
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.dll
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\refint\Orchestrator.Domain.dll
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\Orchestrator.Domain.pdb
+C:\Users\amade\RiderProjects\DamplingFactory\Orchestrator\Orchestrator.Domain\Orchestrator.Domain\obj\Debug\net9.0\ref\Orchestrator.Domain.dll

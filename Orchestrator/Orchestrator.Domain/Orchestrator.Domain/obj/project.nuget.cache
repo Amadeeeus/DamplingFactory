@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Mwd1vcvLy/Q=",
+  "dgSpecHash": "x3spFUJtz/A=",
   "success": true,
   "projectFilePath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\Orchestrator\\Orchestrator.Domain\\Orchestrator.Domain\\Orchestrator.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amade\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\amade\\.nuget\\packages\\confluent.kafka\\2.8.0\\confluent.kafka.2.8.0.nupkg.sha512",
+    "C:\\Users\\amade\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\amade\\.nuget\\packages\\librdkafka.redist\\2.8.0\\librdkafka.redist.2.8.0.nupkg.sha512",
     "C:\\Users\\amade\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\amade\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",

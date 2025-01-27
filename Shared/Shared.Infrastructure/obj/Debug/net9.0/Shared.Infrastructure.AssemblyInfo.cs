@@ -13,12 +13,9 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shared.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ea500a2faededb635a32fc4b54ac38ca8303c37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01f05b1a01d56e619a482701824aaa8d45c293d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shared.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shared.Infrastructure")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18544fef563868a9f332dbe9ea7b3ceb8760b56c")]
-[assembly: System.Reflection.AssemblyProductAttribute("Orchestrator.Application")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Orchestrator.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

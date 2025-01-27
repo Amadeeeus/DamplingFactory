@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "OGoEQiek99g=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\amade\\RiderProjects\\DamplingFactory\\RecipeService\\RecipeService.Api\\RecipeService.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\amade\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "C:\\Users\\amade\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

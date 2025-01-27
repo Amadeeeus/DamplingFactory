@@ -7,17 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-<<<<<<< HEAD:Shared/Shared.Application/Shared.Application.csproj
+<ProjectReference Include= "/Shared.Application/Shared.Application.csproj" />
       <Folder Include="Commands\" />
       <Folder Include="Queries\" />
-=======
       <PackageReference Include="AutoMapper" Version="13.0.1" />
       <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
       <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
       <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.1" />
       <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.1" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
->>>>>>> fd46983 (a few options added):Orchestrator/Orchestrator.Domain/Orchestrator.Domain/Orchestrator.Domain.csproj
     </ItemGroup>
 
 </Project>
