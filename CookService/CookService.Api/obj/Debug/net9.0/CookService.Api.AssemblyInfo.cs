@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CookService.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b62b77be0ba35d54c9abff1e5e892e80c3d3b9e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03d0e6b035696eb7a03535bc656fe04fd9bad5fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("CookService.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CookService.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
